@@ -1,0 +1,116 @@
+@charset "UTF-8";
+
+body {
+	margin: 0;
+	padding: 0;
+	color: #000;
+}
+
+div {
+	display: block;
+}
+
+a {
+	text-decoration: none;
+}
+
+.contents {
+	width: 1100px;
+	margin: 0 auto;
+}
+
+.title_top {
+	
+	padding: 25px 0 14px;
+	border-bottom: 1px solid #EEE;
+	background-color: #414141;
+	height: 60px;
+}
+
+.title_top h1 {
+	text-align: center;
+	font-size: 30px;
+}
+
+.tab_wrap {
+	height: 80px;
+	position: relative;
+	box-sizing: initial;
+}
+
+.tab_wrap ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: block;
+}
+
+.tab_wrap li {
+	display: list-item;
+	text-align: center;
+}
+
+.tab_tit {
+	width: 33.3%;
+	left: 0%;
+	line-height: 50px;
+	font-size: 40px;
+	border: none;
+	top: 0;
+	cursor: pointer;
+	float: left;
+	height: 80px;
+}
+
+.tab_inquiry {
+	font-size: 20px;
+    text-align: center;
+    padding: 0 25px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.tab_inquiry p {
+	margin-bottom: 10px;
+	display: block;
+}
+
+.tab_inquiry a {
+	color: #000;
+	text-decoration: underline;
+	margin-right: 24px;
+}
+/* tabs에 important번호 이미지 */
+.notice_important strong{
+		display: inline-block;
+	    width: 16px;
+	    height: 16px;
+	    margin-left: 5px;
+	    vertical-align: middle;
+	    background-image: url("https://www.lottecinema.co.kr/NLCHS/Content/images/icon/caution_15_2.png");
+}
+#important a{
+	color: #ff0000;
+	font-weight: bold;
+}
+.notice_tit a{
+	color: #000;
+}
+.numKey{
+	background-color: #414141;
+    color: white;
+    width: 28px;
+    height: 28px;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.numKey1{
+	background-color: #414141;
+    color: white;
+    width: 49px;
+    height: 28px;
+    font-size: 17px;
+    border-radius: 4px;
+    cursor: pointer;
+}

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+  <mapper namespace="kr.co.jhta.cinema">
+     <select id="commentAll" parameterType="int" resultType="comedto">
+        SELECT mc.mcno, c.id, mc.mcgrade, mc.mccontents, mc.mcregdate, mc.customerno, mc.mno
+        from mcomment mc, customer c
+        where c.customerno = mc.customerno
+        and mc.mno=#{mno}
+     </select> 
+
+     
+     <select id="commentOne" parameterType="map" resultType="comedto">
+        SELECT mcno, mcgrade, mccontents, mcregdate, customerno, mno
+        from mcomment
+        <where>
+              mno = #{mno}
+        </where>
+     </select>
+     <insert id="cminsertOne" parameterType="comedto">
+     	insert into mcomment(mcno, mcgrade, mccontents, mcregdate, customerno, mno)
+     	values(MCNO_SEQ.nextval, #{mcgrade}, #{mccontents}, sysdate, #{customerno}, #{mno} )
+     	
+     </insert>
+  </mapper>
